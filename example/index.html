@@ -8,8 +8,8 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	
-	<link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.2.0.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/application.css" media="all" />
+	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.2.0.css" />
+	<link rel="stylesheet" href="css/application.css" />
 </head>
 <body>
 	<div class="container storagify">
@@ -29,7 +29,7 @@
 			<h3>Next, download and include Storagify</h3>
 			<code class="instructions">&lt;script src="/path/to/jquery.storagify.min.js"&gt;&lt;/script&gt;</code>
 			<h3>Last but not least, call Storagify on whatever elements you wish to editable.</h3>
-			<code class="instructions">$('#theElement').storagify('storageKey');</code>
+			<code class="instructions">$('#theElement').storagify({storageKey:'storageKey'});</code>
 			<ul style="list-style-type:square;">
 			    <li><code>$('#element')</code> is the element you want the HTML5 <code>contentEditable</code> attribute to placed on</li>
 			    <li>The 'storageKey' is what will the element's key will be in <code >localStorage</code></li>
@@ -38,22 +38,30 @@
 		</div>
 		<div class="buttons">
 			<div class="gitbuttons">
-				<a class="btn large primary github" href="https://github.com/ekdevdes/Storagify">Check it out on github</a>
-				<a href="https://github.com/ekdevdes/Storagify" class="btn large">Fork it on Github</a>
+				<a class="btn large primary github button" href="https://github.com/ekdevdes/Storagify">Check it out on github</a>
+				<a href="https://github.com/ekdevdes/Storagify" class="btn large button">Fork it on Github</a>
 			</div>
 			<div class="siteButtons">
-				<a href="http://ek.alphaschildren.org/storagify/Storagify/jquery.storagify.js" class="btn small github">Download Uncompressed Source <b>4+ KB</b> &darr;</a>
-				<a href="http://ek.alphaschildren.org/storagify/Storagify/jquery.storagify.min.js" class="btn small github">Download Compressed Source <b>4 KB</b> &darr;</a>
+				<a href="http://ek.alphaschildren.org/storagify/Storagify/jquery.storagify.js" class="btn small github button">Download Uncompressed Source <b>4+ KB</b> &darr;</a>
+				<a href="http://ek.alphaschildren.org/storagify/Storagify/jquery.storagify.min.js" class="btn small github button">Download Compressed Source <b>4 KB</b> &darr;</a>
 			</div>
 		</div>
 	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-	<script type="text/javascript" src="http://ek.alphaschildren.org/storagify/Storagify/jquery.storagify.min.js"></script>
+	<script type="text/javascript" src="js/jquery.storagify.min.js?v=3"></script>
 	<script type="text/javascript">
-		$('p.editable').storagify('exampleParagraph');
-		$('.example h2').storagify('exampleHeader');
-		$('#refresh').storagify('resfreshText');
-		$('#quit').storagify('quitText');
+		$('p.editable').storagify({
+			storageKey:'exampleParagraph'
+		});
+		$('.example h2').storagify({
+			storageKey:'exampleHeader'
+		});
+		$('#refresh').storagify({
+			storageKey:'resfreshText'
+		});
+		$('#quit').storagify({
+			storageKey:'quitText'
+		});
 	</script>
 </body>
 </html>
