@@ -4,12 +4,13 @@ STORAGIFY
 Usage
 -----
 
-First include the latest version of jQuery  &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"&gt;&lt;/script&gt;  
+First include the latest version of jQuery  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>  
 
-Next, download and include Storagify  &lt;script src="/path/to/jquery.storagify.min.js"&gt;&lt;/script&gt;  
+Next, download and include Storagify  <script src="/path/to/jquery.storagify.min.js"></script>  
 
 Last but not least, call Storagify on whatever elements you wish to editable.
 $('#theElement').storagify({storageKey:'storageKey'});
+
 +	$('#element') is the element you want the HTML5 contentEditable attribute to placed on
 +	The 'storageKey' is what will the element's key will be in localStorage
 +	For a list of options you can pass please refer to the [API &amp; Options Section of the Website](http://ek.alphaschildren.org/resources/jquery-plugins/storagify)
