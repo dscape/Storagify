@@ -18,7 +18,7 @@ Next, download and include Storagify
 
 Last but not least, call Storagify on whatever elements you wish to editable.
 
-``` javascript
+``` javascript 
 $('#theElement').storagify({storageKey:'storageKey'});
 ```
 
