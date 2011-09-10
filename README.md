@@ -4,60 +4,17 @@ STORAGIFY
 Usage
 -----
 
-`$('#element').storagify({
-	storageKey:'storageKey'
-})`
+First include the latest version of jQuery  &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"&gt;&lt;/script&gt;  
 
-+	`$('#element')` is the element you want the HTML5 contentEditable attribute to placed on
-+ 	The 'storageKey' is what will the element's key will be in `localStorage`
+Next, download and include Storagify  &lt;script src="/path/to/jquery.storagify.min.js"&gt;&lt;/script&gt;  
 
-I have added two new options to Storagify `onStart` and `onExit`. Both options are functions. 
+Last but not least, call Storagify on whatever elements you wish to editable.
+$('#theElement').storagify({storageKey:'storageKey'});
++	$('#element') is the element you want the HTML5 contentEditable attribute to placed on
++	The 'storageKey' is what will the element's key will be in localStorage
++	For a list of options you can pass please refer to the [API &amp; Options Section of the Website](http://ek.alphaschildren.org/resources/jquery-plugins/storagify)
 
-The `onStart` event called when the element the element in question has focus. 
-The `onExit` event is called after the user is done editing the element in question and it has lost focus.
-
-Ideas
-
-The `onExit` event would be a good place to do a AJAX call to your server with the new title of the element in question. For example, you could use Storagify to posts on a blog and you could use Storagify's `onExit` event to send the new title of the blog title of the blog post or the new post body of the blog post up to your server via AJAX
-
-
-The `onStart` event
-
-$('#element').storagify({
-	storageKey:'storageKey',
-	onStart:function(){
-		alert('hello');
-	}
-});
-
-The `onExit` event
-
-$('#element').storagify({
-	storageKey:'storageKey',
-	onExit:function(){
-		alert('hello');
-	}
-});
-
-Oh, and the `onStart` and the `onExit` events can be used together, and the `storageKey` option is required.
-
-The `onStart` event & The `onExit` event
-
-$('#element').storagify({
-	storageKey:'storageKey',
-	onStart:function(){
-		alert('hello');
-	},
-	onExit:function(){
-		alert('hello');
-	}
-});
-
-Todo
-----
-
-+	Better documentation...I Promise
-+ 	Update example/index.html with the new changes made to Storagify
+That's it! Have Fun!
 
 Credits
 -------
