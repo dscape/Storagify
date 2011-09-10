@@ -27,6 +27,7 @@ $('#theElement').storagify({storageKey:'storageKey'});
 +	For a list of options you can pass please refer to the [API &amp; Options Section of the Website](http://ek.alphaschildren.org/resources/jquery-plugins/storagify)
 
 That's it! Have Fun!
+--------------------
 
 Credits
 -------
