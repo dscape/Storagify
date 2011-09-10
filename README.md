@@ -11,11 +11,13 @@ First include the latest version of jQuery
 ```  
 
 Next, download and include Storagify  
+
 ``` html
 <script src="/path/to/jquery.storagify.min.js"></script>
 ```
 
 Last but not least, call Storagify on whatever elements you wish to editable.
+
 ``` javascript
 $('#theElement').storagify({storageKey:'storageKey'});
 ```
