@@ -4,7 +4,11 @@ STORAGIFY
 Usage
 -----
 
-First include the latest version of jQuery  `<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>`  
+First include the latest version of jQuery  
+
+``` html
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+```  
 
 Next, download and include Storagify  `<script src="/path/to/jquery.storagify.min.js"></script>`
 
