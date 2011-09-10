@@ -10,10 +10,15 @@ First include the latest version of jQuery
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 ```  
 
-Next, download and include Storagify  `<script src="/path/to/jquery.storagify.min.js"></script>`
+Next, download and include Storagify  
+``` html
+<script src="/path/to/jquery.storagify.min.js"></script>
+```
 
 Last but not least, call Storagify on whatever elements you wish to editable.
-`$('#theElement').storagify({storageKey:'storageKey'});`
+``` javascript
+$('#theElement').storagify({storageKey:'storageKey'});
+```
 
 +	$('#element') is the element you want the HTML5 contentEditable attribute to placed on
 +	The 'storageKey' is what will the element's key will be in localStorage
