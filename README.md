@@ -24,7 +24,7 @@ $('#theElement').storagify({storageKey:'storageKey'});
 
 +	$('#element') is the element you want the HTML5 contentEditable attribute to placed on
 +	The 'storageKey' is what will the element's key will be in localStorage
-+	For a list of options you can pass please refer to the [API &amp; Options Section of the Website](http://ek.alphaschildren.org/resources/jquery-plugins/storagify#api-options)
++	For a list of options you can pass please refer to the [API &amp; Options Section of the Website](http://ek.alphaschildren.org/resources/jquery-plugins/storagify/#api-options)
 
 __That's it! Have Fun!__
 
