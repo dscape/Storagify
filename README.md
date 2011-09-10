@@ -26,8 +26,7 @@ $('#theElement').storagify({storageKey:'storageKey'});
 +	The 'storageKey' is what will the element's key will be in localStorage
 +	For a list of options you can pass please refer to the [API &amp; Options Section of the Website](http://ek.alphaschildren.org/resources/jquery-plugins/storagify)
 
-That's it! Have Fun!
---------------------
+>That's it! Have Fun!
 
 Credits
 -------
