@@ -28,6 +28,15 @@ $('#theElement').storagify({storageKey:'storageKey'});
 
 __That's it! Have Fun!__
 
+Bug Reporter
+------------
+
+Please report any bugs here on Github. 
+
+[http://github.com/ekdevdes/Storagify/issues](http://github.com/ekdevdes/Storagify/issues)
+
+Thank you.
+
 Credits
 -------
 
