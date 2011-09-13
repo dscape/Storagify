@@ -28,7 +28,7 @@ $('#theElement').storagify({storageKey:'storageKey'});
 
 __That's it! Have Fun!__
 
-Bug Reporter
+Bug Reporter & Feature Requests
 ------------
 
 Please report any bugs here on Github. 
@@ -36,6 +36,19 @@ Please report any bugs here on Github.
 [http://github.com/ekdevdes/Storagify/issues](http://github.com/ekdevdes/Storagify/issues)
 
 Thank you.
+
+Contributing
+------------
+
+If you would like to contribute to Storagify please do the following:
+
++	Fork this repo
++	Make your changes
++	Update example/index.html (the docs) with your change
++	Minify the javascript
++	Send me a pull request
+
+Thank you :)
 
 Credits
 -------

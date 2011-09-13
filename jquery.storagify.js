@@ -38,22 +38,46 @@
 		var defaults = {
 					onStart:function(){},
 					onExit:function(){},
-					storageKey:'storageKey'
+					storageKey:'storageKey',
+					revert:false
 				},
 			settings = $.extend({},defaults,options);
 		
 		return this.each(function(){
-			var $this = $(this);
+			var $this = $(this),
+				$text = $this.text(),
+				origKey = "orig" + settings.storageKey;
+				
+			localStorage.setItem(origKey,$text);
+			
 			$this.attr('contenteditable','');
-			$this.text(localStorage.getItem(settings.storageKey));
+			
+			if(settings.revert){
+				$this.text(localStorage.getItem(origKey));
+			}else{
+				$this.text(localStorage.getItem(settings.storageKey));
+			}
 			
 			$this.focus(function(){
-				settings.onStart.call();
+				var focusText = $this.text();
+				
+				$this.addClass("sf-focus");
+				
+				settings.onStart.apply(this,[$(this),focusText]);
+				
 			});
 			
 			$this.blur(function(){
-				settings.onExit.call();
+				var blurText = $this.text();
+				
+				$this.removeClass("sf-focus");
+				$this.addClass("sf-blur");
+				
+				settings.onExit.apply(this,[$(this),blurText]);
+				
 				localStorage.setItem(settings.storageKey,$this.text());
+				
+				$this.removeClass("sf-blur");
 			});
 		});
 	};

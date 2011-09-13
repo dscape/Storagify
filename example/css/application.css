@@ -387,6 +387,31 @@ h3.me-too{
         user-select: none;
 }
 
+ul {
+	list-style-type:square;
+}
+
+#onStart{
+	margin-top:30px;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=50);
+}
+
+#onStartExit span{
+	font-size:13px;
+}
+
+#revert{
+	margin-top:40px;
+}
+
+#onStart,
+#onExit,
+#onStartExit{
+	margin-bottom:15px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .container {
     width: 748px;
